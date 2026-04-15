@@ -90,7 +90,7 @@ curl -s -X POST "https://api.telegram.org/bot${TG_BOT_TOKEN}/sendMessage" \
 }
 
 send_telegram_log() {
-    LOG_FILE="$ROOTDIR/logs/build.txt"
+    LOG_FILE="$ROOTDIR/logs/build.log"
 
     [ ! -f "$LOG_FILE" ] && return
 
